@@ -50,6 +50,14 @@
             margin-right: 1em;
         }
 
+        .projects {
+            padding-top: 5px;
+        }
+
+        .projectskills {
+            margin-top: -7px;
+        }
+
         .copyright {
             text-align: center;
             margin-bottom: 15px;
@@ -109,31 +117,33 @@
 
             <p>{{ item.summary }}</p>
 
-            <div class="projects">
+            <div>
 
-            {% for project in item.projects %}
-            {% if project.link %}
-            <h5>
-                <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a>
-                {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
-                {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
-            </h5>
-            {% else %}
-            <h5>
-                <strong>{{ project.name }}</strong>
-                {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
-                {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
-            </h5>
-            {% endif %}
+                {% for project in item.projects %}
+                <div class="projects">
+                    {% if project.link %}
+                    <h5>
+                        <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a>
+                        {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
+                        {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+                    </h5>
+                    {% else %}
+                    <h5>
+                        <strong>{{ project.name }}</strong>
+                        {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
+                        {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+                    </h5>
+                    {% endif %}
 
-            <p>{{ project.description }}</p>
+                    <p>{{ project.description }}</p>
 
-            <p>
-                {% for skill in project.skills %}
-                <span class="label label-default skills"> {{ skill }} </span>
+                    <p class="projectskills">
+                        {% for skill in project.skills %}
+                        <span class="label label-default skills"> {{ skill }} </span>
+                        {% endfor %}
+                    </p>
+                </div>
                 {% endfor %}
-            </p>
-            {% endfor %}
             </div>
         </div>
     </div>

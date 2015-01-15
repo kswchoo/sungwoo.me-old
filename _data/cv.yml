@@ -1,7 +1,7 @@
 name: Sungwoo Choo
 home: http://sungwoo.me
 email: choo@sungwoo.me
-vcard: /sungwoo.vcf
+vcard: sungwoo.vcf
 
 professional:
   - name: NAVER Corporation
@@ -14,19 +14,22 @@ professional:
       As an alternative military service (active-duty).
     projects:
       - name: NAVER Mail App 2.0
-        description:
+        description: >
           Overhaul redesign project of NAVER Mail App.
           We changed communication protocol from IMAP to HTTP-based proprietary protocol to implement
-          NAVER-specific features and fast sync speed.
+          NAVER-specific features and improve synchronization performance. From this project,
+          I mainly contributed to iOS version because our team was grown.
         skills:
           - iOS
         links:
           ios: https://itunes.apple.com/app/id582152066
           android: https://play.google.com/store/apps/details?id=com.nhn.android.mail
       - name: SESHAT (Mobile Crash Analysis System)
-        description:
-          This is started from my personal project to automate crash report analysis.
-          Now this system is most famous crash analysis and reporting system in NAVER.
+        description: >
+          SESHAT was my small personal project to automate the calculation of mobile crash statistics.
+          Now this system is used widely in the company and supporting quality management of 15 NAVER
+          apps and collecting over a million cases per day. Now this system contains Apple dSYM symbolicator,
+          session log collection servers and full-text search. 
         skills:
           - Java
           - Spring
@@ -36,7 +39,9 @@ professional:
           - iOS
           - Android
       - name: NAVER Mail App 1.0
-        description: "Company's first E-mail mobile application. Based on standard IMAP protocol with few extensions."
+        description: >
+          Company's first E-mail mobile application. Based on standard IMAP protocol with few extensions.
+          I contributed both of Android and iOS app with two teammates.
         skills:
           - Android
           - iOS
@@ -44,7 +49,7 @@ professional:
           ios: https://itunes.apple.com/app/id582152066
           android: https://play.google.com/store/apps/details?id=com.nhn.android.mail
       - name: Corporate intranet rebuilding (CONNECT)
-        description: Web-based intranet system of NAVER.
+        description: CONNECT is web-based intranet community system of NAVER.
         skills:
           - Java
           - Spring
@@ -54,7 +59,7 @@ professional:
     location: Seoul, Korea
     start: 02/2011
     end: 02/2012
-    title: Director of Development Group, Co-founder
+    title: "Director of Development Group, Co-founder"
     projects:
       - name: Open Survey
         link: http://www.opensurvey.co.kr
