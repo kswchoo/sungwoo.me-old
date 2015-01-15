@@ -52,6 +52,7 @@
 
         .copyright {
             text-align: center;
+            margin-bottom: 15px;
         }
 
         @media print {
@@ -84,6 +85,8 @@
         <i class="fa fa-home cv-gray"></i> <a href="{{ site.data.cv.home }}"> {{ site.data.cv.home }}</a>
         &emsp;
         <i class="fa fa-envelope cv-gray"></i> <a href="mailto:{{ site.data.cv.email }}"> {{ site.data.cv.email }}</a>
+        &emsp;
+        <i class="fa fa-user cv-gray"></i> <a href="{{ site.data.cv.vcard }}">vCard</a>
     </div>
 
     <hr>
@@ -110,9 +113,17 @@
 
             {% for project in item.projects %}
             {% if project.link %}
-            <h5><a href="{{ project.link }}"><strong>{{ project.name }}</strong></a></h5>
+            <h5>
+                <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a>
+                {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
+                {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+            </h5>
             {% else %}
-            <h5><strong>{{ project.name }}</strong></h5>
+            <h5>
+                <strong>{{ project.name }}</strong>
+                {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
+                {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+            </h5>
             {% endif %}
 
             <p>{{ project.description }}</p>
@@ -216,8 +227,8 @@
     <hr/>
 
     <div class="copyright">
-        &copy;2014 Sungwoo Choo. All rights reserved.<br />
-        Last updated at Dec 15, 2014.
+        &copy; Sungwoo Choo. All rights reserved.<br />
+        Last updated at {{ site.time | date_to_string }}.
     </div>
 
 </div>

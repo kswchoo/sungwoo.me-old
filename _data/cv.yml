@@ -1,6 +1,7 @@
 name: Sungwoo Choo
 home: http://sungwoo.me
 email: choo@sungwoo.me
+vcard: /sungwoo.vcf
 
 professional:
   - name: NAVER Corporation
@@ -19,6 +20,9 @@ professional:
           NAVER-specific features and fast sync speed.
         skills:
           - iOS
+        links:
+          ios: https://itunes.apple.com/app/id582152066
+          android: https://play.google.com/store/apps/details?id=com.nhn.android.mail
       - name: SESHAT (Mobile Crash Analysis System)
         description:
           This is started from my personal project to automate crash report analysis.
@@ -36,6 +40,9 @@ professional:
         skills:
           - Android
           - iOS
+        links:
+          ios: https://itunes.apple.com/app/id582152066
+          android: https://play.google.com/store/apps/details?id=com.nhn.android.mail
       - name: Corporate intranet rebuilding (CONNECT)
         description: Web-based intranet system of NAVER.
         skills:
@@ -72,6 +79,7 @@ professional:
     start: 06/2008
     end: 08/2008
     summary: "Research topic: IPS (In-Plane Switching) panel performance tuning."
+
 education:
   colleges:
     - name: Seoul National University
