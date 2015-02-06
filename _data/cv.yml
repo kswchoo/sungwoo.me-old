@@ -260,4 +260,7 @@ talks:
     where: NAVER Open Seminar
     year: 2014
     link: http://helloworld.naver.com/helloworld/819776
+  - name: A Multithreaded Assembler to Parallelie De Novo DNA Sequencing
+    where: Winter Symposium of Korea Genome Organization
+    year: 2012
 
