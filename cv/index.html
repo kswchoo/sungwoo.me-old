@@ -125,13 +125,13 @@
                     <h5>
                         <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a>
                         {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
-                        {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+                        {% if project.links.android %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
                     </h5>
                     {% else %}
                     <h5>
                         <strong>{{ project.name }}</strong>
                         {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
-                        {% if project.links.ios %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+                        {% if project.links.android %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
                     </h5>
                     {% endif %}
 
