@@ -9,10 +9,12 @@ professional:
     location: Seongnam, Korea
     start: 02/2012
     end: Present
-    title: Software Engineer (Assistant Manager)
-    summary:
-      As an alternative military service (active-duty).
+    title: Software Engineer
     projects:
+      - name: Works One App
+        description: Currently unreleased confidential product. Details will be updated after its public release.
+        skills:
+          - iOS
       - name: NAVER Mail App 2.0
         description: >
           Overhaul redesign project of NAVER Mail App.
@@ -21,6 +23,7 @@ professional:
           I mainly contributed to iOS version because our team was grown.
         skills:
           - iOS
+          - Android
         links:
           ios: https://itunes.apple.com/app/id582152066
           android: https://play.google.com/store/apps/details?id=com.nhn.android.mail
