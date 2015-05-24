@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font-family: $serif; 
+	font-family: $font; 
 	line-height: 1.75;  
 	font-size: 112.5%; // 18px base font size
 	color: $black;
@@ -169,7 +169,7 @@ HEADER STYLING
 
 .header {
 	background-color: seagreen;
-	background-image: url('../img/touring.jpg');
+	background-image: url('../img/star.jpg');
 	background-size: cover; 
 	background-position: center center;
 	color: white;
@@ -187,7 +187,7 @@ HEADER STYLING
 		padding-left: 2rem;
 		font-size: 1em;
 		line-height: 3em;
-		font-family: $sans-serif;
+		font-family: $font;
 		font-weight: 800;
 		text-transform: uppercase;
 
@@ -244,7 +244,7 @@ POST STYLING
 	.meta {
 		text-align: center;
 		color: lighten(black, 50%);
-		font-family: $sans-serif;
+		font-family: $font;
 		font-weight: 300;
 	}
 
@@ -304,7 +304,7 @@ POST NAV STYLING
 		height: 5rem;
 		overflow: hidden;
 		position: relative;
-		font-family: $sans-serif;
+		font-family: $font;
 		font-weight: 800;
 		font-size: .9em;
 		text-transform: uppercase;
@@ -476,7 +476,7 @@ POST LIST STYLING
 
 		.date {
 			color: lighten(black, 50%);
-			font-family: $sans-serif;
+			font-family: $font;
 			font-weight: 300;
 			font-size: .8em;
 		}

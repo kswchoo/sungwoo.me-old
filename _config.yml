@@ -1,7 +1,13 @@
-title: Long Haul
+title: 추승우
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://brianmaierjr.github.com/long-haul
+gems: ['jekyll-multiple-languages']
+languages: ['ko', 'en']
+language_default: 'ko'
+fill_default_content: true
+
+
+url: http://sungwoo.me
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -19,9 +25,12 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: kswchoo
+   twitter: kswchoo
+   facebook: kswchoo
+   email: choo@sungwoo.me
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
+
+
+

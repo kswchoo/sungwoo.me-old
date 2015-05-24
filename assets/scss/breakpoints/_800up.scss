@@ -17,9 +17,9 @@ GLOBAL STYLES
 		position: absolute;
 		top: -2em;
 		left: 0;
-		-webkit-transform: skewY(-2deg);
-		-ms-transform: skewY(-2deg);
-		transform: skewY(-2deg);
+		-webkit-transform: skewY(-1.5deg);
+		-ms-transform: skewY(-1.5deg);
+		transform: skewY(-1.5deg);
 		-webkit-transform-origin: bottom left;
 		-ms-transform-origin: bottom left;
 		transform-origin: bottom left; 
@@ -56,7 +56,7 @@ HEADER STYLING
 .header {
 	height: 15em;
 	position: relative;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 
 	.container {
 		position: relative;
@@ -165,9 +165,9 @@ POST STYLING
 			position: absolute;
 			top: -2em;
 			left: 0;
-			-webkit-transform: skewY(-2deg);
-			-ms-transform: skewY(-2deg);
-			transform: skewY(-2deg);
+			-webkit-transform: skewY(-1.5deg);
+			-ms-transform: skewY(-1.5deg);
+			transform: skewY(-1.5deg);
 			-webkit-transform-origin: bottom left;
 			-ms-transform-origin: bottom left;
 			transform-origin: bottom left;
