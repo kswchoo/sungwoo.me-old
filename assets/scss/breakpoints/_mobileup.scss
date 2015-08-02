@@ -168,7 +168,7 @@ HEADER STYLING
 ***************/
 
 .header {
-	background-color: seagreen;
+	background-color: #333;
 	background-image: url('../img/star.jpg');
 	background-size: cover; 
 	background-position: center center;
@@ -189,7 +189,6 @@ HEADER STYLING
 		line-height: 3em;
 		font-family: $font;
 		font-weight: 800;
-		text-transform: uppercase;
 
 		a {
 			color: white;

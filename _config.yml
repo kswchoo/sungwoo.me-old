@@ -6,9 +6,7 @@ languages: ['ko', 'en']
 language_default: 'ko'
 fill_default_content: true
 
-
 url: http://sungwoo.me
-baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -16,19 +14,19 @@ markdown: redcarpet
 highlighter: pygments
 paginate: 5
 
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
-
 social:
    github: kswchoo
    twitter: kswchoo
    facebook: kswchoo
    email: choo@sungwoo.me
+
+navigation:
+    - title: 연락하기
+      title_en: Contact
+      url: contact
+    - title: 걸어온 길
+      title_en: Curriculum vitae
+      url: cv
 
 google_analytics: ""
 

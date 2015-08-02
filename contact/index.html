@@ -1,0 +1,29 @@
+---
+layout: default
+title: 연락하기
+---
+
+<div id="contact">
+  <h1 class="pageTitle">연락하기</h1>
+  <div class="contactContent">
+    <p class="intro">
+      제게 연락을 하고 싶으시다면 이메일을 사용하는 것이 제일 좋습니다.
+    </p>
+    <p>
+      메일은 <a href="mailto:choo@sungwoo.me">choo@sungwoo.me</a> 로 보내주시면 됩니다.
+      연락처 카드에 바로 추가하길 윈하신다면 <a href="sungwoo.vcf">vCard</a>도 준비되어 있습니다.
+    </p>
+    <p>
+      이메일 보내는 것이 귀찮으시다면, 오른쪽 폼에 남겨주시면 제가 내용을 메일로 받을 수 있습니다.
+    </p>
+  </div>
+  <form action="http://formspree.io/choo@sungwoo.me">
+    <label for="name">이름</label>    
+    <input type="text" id="name" name="name" class="full-width"><br>
+    <label for="email">이메일</label>
+    <input type="email" id="email" name="_replyto" class="full-width"><br>
+    <label for="message">남기실 말씀</label>
+    <textarea name="message" id="message" cols="30" rows="10" class="full-width"></textarea><br>
+    <input type="submit" value="보내기" class="button">
+  </form>
+</div>

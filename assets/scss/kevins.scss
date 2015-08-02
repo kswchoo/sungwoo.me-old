@@ -1,0 +1,64 @@
+#cv {
+
+	blockquote {
+		clear: both;
+		margin: 2.5em 0;
+		padding: 0;
+		line-height: 1.8;
+		position: relative;
+		text-align: center;
+		color: #aaa;
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -1.25em;
+			background: #aaa;
+			display: block;
+			height: 2px;
+			width: 150px;
+			left: calc(50% - 75px);
+		}		
+	}
+
+	h2 {
+		margin: 1em 0 0.5em 0;
+	}
+
+	h4 {
+		margin: 0.5rem 0 0.5rem 0;
+	}
+	.description {
+		margin: 0.2em 0 0.5em 0;
+	}
+
+	.pill {
+	    text-decoration: none;
+	    font-size: 14px;
+	    font-weight: bold;
+	    padding: 0 12px;
+	    line-height: 32px;
+	    height: auto;
+	    display: inline-block;
+	    text-align: center;
+	    background-color:#5DADE2;
+	    color: #ffffff;
+	}
+
+	.right {
+		@media (min-width: 800px) {
+			float:right; 
+			text-align: right;
+		}
+		font-size: 15px; 
+		font-weight: normal;
+	}
+
+	ul {
+		padding: 0 0 0 20px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
