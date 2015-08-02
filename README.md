@@ -7,3 +7,11 @@ You may need jekyll to build this repository. To make this and publish to server
     make
 
 (You'll need my private key! :))
+
+
+## Setup
+
+```
+gem install susy
+gem install normalize-scss
+```
