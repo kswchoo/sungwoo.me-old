@@ -1,0 +1,44 @@
+{% if page.is_default_language %}
+{% assign root = '/' %}
+{% else %}
+{% assign root = page.language | prepend:'/' | append: '/' %}
+{% endif %}
+
+ <div class="header">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">
+                {% if page.language == 'ko' %}
+                케빈네
+                {% else %}
+                Kevin's
+                {% endif %}
+         </a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                {% assign current = nil %}{% if page.url_no_language == "/index.html" %}{% assign current = 'current' %}{% endif %}
+                 {% if page.language == 'ko' %}
+                 <li class="element {{ current }}"> <a href="/">홈</a></li>
+                 {% else %}
+                 <li class="element {{ current }}"> <a href="/en">Home</a></li>
+                 {% endif %}
+
+                 {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url %}{% assign current = 'current' %}{% endif %}
+                 <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                     <a href="{{ link.url | prepend: root }}">
+                        {% if page.language == 'ko' %}
+                        {{ link.title }}
+                        {% else %}
+                        {{ link.title_en }}
+                        {% endif %}
+                     </a>
+                 </li> 
+                 {% endfor %}
+                 {% if page.language == 'ko' %}
+                 <li class="element"> <a href="/en{{page.url_no_language}}">English</a></li>
+                 {% else %}
+                 <li class="element"> <a href="{{page.url_no_language}}">한국어</a></li>
+                 {% endif %}
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->

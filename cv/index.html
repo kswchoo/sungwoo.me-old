@@ -1,0 +1,122 @@
+---
+layout: default
+title: 걸어온 길
+---
+{% assign cv = site.data.cv %}
+
+<div id="cv">
+	<h1 class="pageTitle">걸어온 길</h1>
+
+	<blockquote>
+		먹여 주셔서, 읽어 주셔서, 칭찬해 주셔서 정말 감사합니다.
+	</blockquote>
+
+
+  <h1>추승우</h1>
+	<h2>짬밥</h2>
+	{% for item in cv.professional %}
+	<h3>
+		<a href="{{ item.link }}">{{ item.name }}</a>
+		<div class="right">
+			{{ item.start | date: "%b %Y" }} 에서 {{ item.end | date: "%b %Y" }} 까지<br>
+			{{ item.location }}
+		</div>
+	</h3>
+	<h4>{{ item.title }}</h4>
+	<p>
+		{{ item.summary }}
+	</p>
+	<ul>
+		{% for project in item.projects %}
+		<li>
+			{% if project.link %}
+            <h4>
+                <a href="{{ project.link }}">{{ project.name }}</a>
+                {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
+                {% if project.links.android %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+            </h4>
+            {% else %}
+            <h4>
+                {{ project.name }}
+                {% if project.links.ios %}<a href="{{ project.links.ios }}"><i class="fa fa-apple"></i></a>{% endif %}
+                {% if project.links.android %}<a href="{{ project.links.android }}"><i class="fa fa-android"></i></a>{% endif %}
+            </h4>
+            {% endif %}
+            <p class="description">{{ project.description }}</p>
+            <p class="skills">
+            	{% for skill in project.skills %}
+                <span class="pill"> {{ skill }} </span>
+                {% endfor %}
+            </p>
+		</li>
+		{% endfor %}
+  	</ul>
+  	{% endfor %}
+
+  	<h2>가방끈</h2>
+  	{% for college in cv.education.colleges %}
+  	<h3>
+  		<a href="{{ college.link }}">{{ college.name }}</a>
+  		<div style="float:right; font-size: 15px; font-weight: normal; text-align: right;">
+  			{{ college.year }}<br>
+  			{{ college.location }}
+		</div>
+  	</h3>
+  	<h4>
+  		{% if college.degree %}{{ college.degree }}, {% endif %}
+		{% if college.major %}{{ college.major }}{% endif %}
+	</h4>
+	<ul>
+        {% if college.adviser %}<li>지도교수: {{ college.adviser }}</li>{% endif %}
+        {% if college.dissertation %}<li>학위논문: {{ college.dissertation }}</li>{% endif %}
+    </ul>
+  	{% endfor %}
+
+  	<h2>짧게 씀 (논문)</h2>
+  	{% for publication in cv.publications %}
+  	<h4>
+        {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
+    </h4>
+	<p>
+        {% for author in publication.authors %}
+            {% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.me %}</strong>{% endif %}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        <br />
+        in <i>{{ publication.publishedin }}</i>, {{ publication.year }}.
+    </p>
+  	{% endfor %}
+
+  	<h2>씀 (책)</h2>
+  	<ul>
+	  	{% for publication in cv.books %}
+	    <li>
+		    <h4>
+		        {% if publication.link %}<a href="{{ publication.link }}">{% endif %}<strong>{{ publication.title }}</strong>{% if publication.link %}</a>{% endif %}
+		    </h4>
+		    <p>
+		        in <i>{{ publication.publishedin }}</i>, {{ publication.year }}.
+		        <br />
+		        {% for author in publication.authors %}
+		            {% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.me %}</strong>{% endif %}{% unless forloop.last %},{% endunless %}
+		        {% endfor %}
+		    </p>
+		</li>
+	    {% endfor %}
+    </ul>
+
+    <h2>칭찬받음</h2>
+    <ul>
+    {% for item in cv.honors %}
+    <li>
+    <h4>{{ item.year }} {{ item.name }}{% if item.detail %}, <em>{{ item.detail }}</em>{% endif %}</h4>
+    </li>
+    {% endfor %}
+    </ul>
+
+    <h2>떠들음</h2>
+    <ul>
+    {% for item in cv.talks %}
+    <li><h4>{{ item.year }} {{ item.name }} @ <em><a href="{{ item.link }}">{{ item.where }}</a></em></h4></li>
+    {% endfor %}
+    </ul>
+</div>
