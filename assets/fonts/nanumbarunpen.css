@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'nanumbarunpen';
+    src: url('nanumbarunpenr.eot');
+    src: url('nanumbarunpenr.eot?#iefix') format('embedded-opentype'),
+         url('nanumbarunpenr.woff2') format('woff2'),
+         url('nanumbarunpenr.woff') format('woff'),
+         url('nanumbarunpenr.ttf') format('truetype'),
+         url('nanumbarunpenr.svg#nanumbarunpenr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nanumbarunpen';
+    src: url('nanumbarunpenb.eot');
+    src: url('nanumbarunpenb.eot?#iefix') format('embedded-opentype'),
+         url('nanumbarunpenb.woff2') format('woff2'),
+         url('nanumbarunpenb.woff') format('woff'),
+         url('nanumbarunpenb.ttf') format('truetype'),
+         url('nanumbarunpenb.svg#nanumbarunpenb') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
