@@ -57,7 +57,7 @@ title: 걸어온 길
   	{% for college in cv.education.colleges %}
   	<h3>
   		<a href="{{ college.link }}">{{ college.name }}</a>
-  		<div style="float:right; font-size: 15px; font-weight: normal; text-align: right;">
+  		<div class="right">
   			{{ college.year }}<br>
   			{{ college.location }}
 		</div>
@@ -73,18 +73,22 @@ title: 걸어온 길
   	{% endfor %}
 
   	<h2>짧게 씀 (논문)</h2>
+    <ul>
   	{% for publication in cv.publications %}
-  	<h4>
-        {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
-    </h4>
-	<p>
-        {% for author in publication.authors %}
-            {% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.me %}</strong>{% endif %}{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-        <br />
-        in <i>{{ publication.publishedin }}</i>, {{ publication.year }}.
-    </p>
+    <li>
+    	<h4>
+          {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
+      </h4>
+  	  <p>
+          {% for author in publication.authors %}
+              {% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.me %}</strong>{% endif %}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+          <br />
+          in <i>{{ publication.publishedin }}</i>, {{ publication.year }}.
+      </p>
+    </li>
   	{% endfor %}
+    </ul>
 
   	<h2>씀 (책)</h2>
   	<ul>

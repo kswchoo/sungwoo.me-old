@@ -6,6 +6,12 @@ professional:
     end: 현재
     title: 개발자
     projects:
+      - name: 네이버앱
+        description: "네이버의 대표 앱, 네이버앱의 iOS버전을 개발하고 있습니다."
+        skills:
+          - iOS
+        links:
+          ios: https://itunes.apple.com/app/id393499958
       - name: Works One 앱
         description: 현재 공개되지 않은 프로젝트입니다. 자세한 내용은 공개 후 업데이트될 예정입니다.
         skills:
@@ -178,6 +184,9 @@ books:
       - name: S. O
 
 honors:
+  - name: NAVER Hack Day
+    detail: Speedy 서비스 개발을 위한 방법/도구 상
+    year: 2015
   - name: 마이크로소프트 이매진컵
     detail: World finalist
     year: 2011

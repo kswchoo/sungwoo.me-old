@@ -6,6 +6,12 @@ professional:
     end: Present
     title: Software Engineer
     projects:
+      - name: NAVER App
+        description: "Developing NAVER App, the native app frontend for all NAVER services."
+        skills:
+          - iOS
+        links:
+          ios: https://itunes.apple.com/app/id393499958
       - name: Works One App
         description: Currently unreleased confidential product. Details will be updated after its public release.
         skills:
@@ -191,6 +197,9 @@ books:
       - name: S. O
 
 honors:
+  - name: NAVER Hack Day
+    detail: Method/tool for speedy service development prize
+    year: 2015
   - name: Microsoft Imagine Cup
     detail: World finalist
     year: 2011

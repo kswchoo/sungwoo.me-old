@@ -12,6 +12,7 @@ You may need jekyll to build this repository. To make this and publish to server
 ## Setup
 
 ```
+gem install compass
 gem install susy
 gem install normalize-scss
 ```

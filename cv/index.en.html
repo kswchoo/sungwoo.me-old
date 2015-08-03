@@ -52,7 +52,7 @@ title: Curriculum Vitae
   	{% for college in cv.education.colleges %}
   	<h3>
   		<a href="{{ college.link }}">{{ college.name }}</a>
-  		<div style="float:right; font-size: 15px; font-weight: normal; text-align: right;">
+  		<div class="right">
   			{{ college.year }}<br>
   			{{ college.location }}
 		</div>
@@ -68,18 +68,22 @@ title: Curriculum Vitae
   	{% endfor %}
 
   	<h2>Publications</h2>
-  	{% for publication in cv.publications %}
-  	<h4>
-        {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
-    </h4>
-	<p>
-        {% for author in publication.authors %}
-            {% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.me %}</strong>{% endif %}{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-        <br />
-        in <i>{{ publication.publishedin }}</i>, {{ publication.year }}.
-    </p>
-  	{% endfor %}
+    <ul>
+    {% for publication in cv.publications %}
+    <li>
+      <h4>
+          {% if publication.link %}<a href="{{ publication.link }}">{% endif %}{{ publication.title }}{% if publication.link %}</a>{% endif %}
+      </h4>
+      <p>
+          {% for author in publication.authors %}
+              {% if author.me %}<strong>{% endif %}{{ author.name }}{% if author.me %}</strong>{% endif %}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+          <br />
+          in <i>{{ publication.publishedin }}</i>, {{ publication.year }}.
+      </p>
+    </li>
+    {% endfor %}
+    </ul>
 
   	<h2>Book</h2>
   	<ul>
