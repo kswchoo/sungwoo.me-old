@@ -15,4 +15,5 @@ You may need jekyll to build this repository. To make this and publish to server
 gem install compass
 gem install susy
 gem install normalize-scss
+gem install jekyll-multiple-languages
 ```
