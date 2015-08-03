@@ -62,3 +62,20 @@
 		text-decoration: none;
 	}
 }
+
+.footer {
+	a i {
+	  padding-top: 8px;
+	  color: #fff;
+	  width: 30px;
+	  height: 30px;
+	  display: inline-block;
+	  -moz-border-radius: 30px;
+	  -webkit-border-radius: 30px;
+	  border-radius: 30px;
+	  background: #aaa;
+	}
+	a:hover i {
+	  background: #4C90D4;
+	}
+}
