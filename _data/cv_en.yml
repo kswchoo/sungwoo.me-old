@@ -12,10 +12,14 @@ professional:
           - iOS
         links:
           ios: https://itunes.apple.com/app/id393499958
-      - name: Works One App
-        description: Currently unreleased confidential product. Details will be updated after its public release.
+      - name: Works Mobile One App
+        description: >
+          Works Mobile One app is unified solution for corporate commnunication. It provides mail, calendar, organization chart and messaging in a single app.
+          This app is currently targeted for Japanese markett, thus only appears on Japan App Store. I was responsible for mail, project configuration and build management on this project.
         skills:
           - iOS
+        links:
+          ios: https://itunes.apple.com/jp/app/id1012129122
       - name: NAVER Mail App 2.0
         description: >
           Overhaul redesign project of NAVER Mail App.

@@ -12,10 +12,14 @@ professional:
           - iOS
         links:
           ios: https://itunes.apple.com/app/id393499958
-      - name: Works One 앱
-        description: 현재 공개되지 않은 프로젝트입니다. 자세한 내용은 공개 후 업데이트될 예정입니다.
+      - name: Works Mobile One 앱
+        description: >
+          Works Mobile One은 메일, 캘린더, 조직도(주소록), 메신저 등 기업환경에서 필요로 하는 기능들을 하나의 앱으로 제공하는 솔루션입니다.
+          현재 일본 시장용으로 출시되어 일본 앱스토어에서만 다운로드가 가능합니다. 이 앱의 메일 부분과 프로젝트 셋팅, 빌드 관리 등을 수행했습니다.
         skills:
           - iOS
+        links:
+          ios: https://itunes.apple.com/jp/app/id1012129122
       - name: 네이버 메일앱 2.0
         description: >
           네이버 메일앱의 전면개편 프로젝트입니다. 기존의 IMAP에 기반한 프로젝트를 NAVER에서 정의한 별도의 HTTP기반의 프로토콜로 바꿔서
